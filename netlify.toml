@@ -1,7 +1,7 @@
 [build]
   functions = "functions/"
-  command = "npm run build"
   publish = "dist/"
+  command = "npm run build"
 
 [template.environment]
   API_URL = "your Google Maps API endpoint"
