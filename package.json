@@ -5,10 +5,10 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "yarn-run-all -p -r site:dev lambda:dev",
+    "site:build": "yarn-run-all -p -r site:dev lambda:dev",
     "start": "yarn-run-all -p -r site:build lambda:build",
     "site:dev": "node server.js",
-    "site:build": "parcel build src/site/index.html --public-url ./",
+    "build": "parcel build src/site/index.html --public-url ./",
     "lambda:dev": "netlify-lambda serve src/lambda",
     "lambda:build": "netlify-lambda build src/lambda"
   },
